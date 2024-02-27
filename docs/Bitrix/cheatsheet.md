@@ -10,3 +10,4 @@
 | D7 Diag/Debug | use Bitrix\Main\Diag\Debug; | writeToFile | Debug::writeToFile($_SERVER); | запись результата в файл, что бы Debug был в файле.  |
 | Главный модуль Классы CFile ResizeImageGet | /** @global CFile $CFile */ | ResizeImageGet | CFile::ResizeImageGet($picture['ID'], array("width" => 40, "height" => 40), BX_RESIZE_IMAGE_PROPORTIONAL); | Изменение размера изображения  |
 | Главный модуль Классы CUtil GetAdditionalFileURL | /** @global CUtil $CUtil */ | GetAdditionalFileURL | CUtil::GetAdditionalFileURL($image_resize['src'], true); | Получение ссылки на файл  |
+| Главный модуль Классы CFile | CFile | GetPath | $arImagesPath[$arElement["PREVIEW_PICTURE"]] = CFile::GetPath($arElement["PREVIEW_PICTURE"]); | Получение пути к файлу  |
