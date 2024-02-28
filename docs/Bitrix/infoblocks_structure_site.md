@@ -4,6 +4,11 @@
 
 **Компонент** - это логически завершённый код, предназначенный для извлечения информации из инфоблоков и других источников и преобразования её в HTML-код для отображения в виде фрагментов web-страниц. Состоит из собственно компонента (контроллер) и шаблона (представление). Компонент, с помощью API одного или нескольких модулей, манипулирует данными. Шаблон компонента выводит данные на страницу.
 
+> Схема работы функционального компонента
+> 
+> 
+> ![Untitled](%D0%9E%D0%B1%D1%89%D0%B5%D0%B5%20%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%B0,%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%20c923d80499824ae5ac02f1aee49ba020/Untitled.png)
+> 
 
 ### **Простые компоненты**
 
@@ -70,8 +75,7 @@
 | 1 | Подключение /bitrix/php_interface/dbconn.php | Подключаемый файл должен содержать определения https://dev.1c-bitrix.ru/api_help/main/general/magic_vars.php#dbtype для соединения с базой данных, https://dev.1c-bitrix.ru/api_help/main/general/constants.php#error_email и https://dev.1c-bitrix.ru/api_help/main/general/constants.php#bx_file_permissions. Обычно он настроен в VMBitrix и тд.  |
 | 2 | Подключение к БД | Без БД сайт — не сайт. Вернет $DB. В случае ошибки запишет лог |
 | 3 | /bitrix/php_interface/after_connect.php | Маловероятно что будет нужно. А так: операции, необходимые для выполнения сразу после соединения с БД |
-| 4 | Определение текущего сайта, инициализация базовых классов  | $APPLICATION, SITE_ID, SITE_DIR, SITE_SERVER_NAME, SITE_CHARSET, FORMAT_DATE, FORMAT_DATETIME, LANGUAGE_ID,
-Определяются все классы и функции Главного модуля. |
+| 4 | Определение текущего сайта, инициализация базовых классов  | Определяются все классы и функции Главного модуля: $APPLICATION, SITE_ID, SITE_DIR, SITE_SERVER_NAME, SITE_CHARSET, FORMAT_DATE, FORMAT_DATETIME, LANGUAGE_ID, |
 | 5 | /bitrix/php_interface/init.php | Для чего? Инициализацию обработчиков событий, подключение дополнительных функций - общие для всех сайтов!. |
 | 6 | /local/php_interface/init.php | Тоже самое. Тока тут уже менять все можно! |
 | 7 | Открытие сессии | Вообще сюда много что можно писать. Обычно храниться в куки. https://www.php.net/manual/ru/intro.session.php#:~:text=Введение%20¶&text=Каждому%20посетителю%20сайта%20присваивается%20уникальный,пользователя%2C%20либо%20передаётся%20через%20URL.  |
@@ -79,15 +83,15 @@
 | 9 | Определение пользователя, авторизация пользователя, завершение сеанса, регистрация (в зависимости от параметров в запросе) | $USER |
 | 10 | Определение текущего https://dev.1c-bitrix.ru/api_help/main/general/template.php | SITE_TEMPLATE_ID |
 | 11 | Событие https://dev.1c-bitrix.ru/api_help/main/events/onbeforeprolog.php | Мы его можем обработать и че-нить сделать  |
-|  | Проверка прав доступа уровня 1 |  |
-|  | Начало буфферизации вывода |  |
+| - | Проверка прав доступа уровня 1 | - |
+| - | Начало буфферизации вывода | - |
 | 12 | Событие https://dev.1c-bitrix.ru/api_help/main/events/onprolog.php | Мы его можем обработать и че-нить сделать |
 | 13 | Подключение шаблона | Подключение хедера  |
 |  | Тело страницы #WORK_AREA# |  |
 | 14 | Подключение шаблона | Подключение футера  |
-|  | Вызов функции https://dev.1c-bitrix.ru/api_help/main/reference/cmain/showspreadcookiehtml.php |  |
+| - | Вызов функции https://dev.1c-bitrix.ru/api_help/main/reference/cmain/showspreadcookiehtml.php | - |
 | 15 | Событие https://dev.1c-bitrix.ru/api_help/main/events/onepilog.php | Мы его можем обработать и че-нить сделать |
-| 16 | Завершение буферизации страницы |  |
+| 16 | Завершение буферизации страницы | - |
 | 17 | Событие https://dev.1c-bitrix.ru/api_help/main/events/onafterepilog.php | Мы его можем обработать и че-нить сделать |
 | 18 | Проверка https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=3436 | Они будут нужны, про них надо читать!!! |
 | 19 | https://dev.1c-bitrix.ru/api_help/main/reference/cevent/checkevents.php | Ага, тут |
@@ -117,8 +121,8 @@
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockcmlexport/index.php | Класс для экспорта данных инфоблока в xml-формате. |
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockcmlimport/index.php | Класс для импорта данных инфоблока в xml-формате. |
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/index.php | Класс для работы с элементами информационных блоков. |
-| https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockformatproperties/dateformat.php |  |
-| https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpricetools/canbuy.php |  |
+| https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockformatproperties/dateformat.php | - |
+| https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpricetools/canbuy.php | - |
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockproperty/index.php | класс для работы со свойствами информационных блоков. |
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpropertyenum/index.php | Класс для работы с вариантами значений для свойств типа "список". |
 | https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockresult/index.php | Вспомогательный класс для работы с объектами результатов выборок. |
