@@ -7,4 +7,4 @@
 3. Документация (новое API) - D7 [(ссылка)](https://dev.1c-bitrix.ru/api_d7/)
 4. План выполнения страницы [(ссылка)](https://dev.1c-bitrix.ru/api_help/main/general/pageplan.php)
 5. Страница с экзаменами Битрикс (+ курсы там же) [(ссылка)](https://academy.1c-bitrix.ru/certification/exams.php)
-6. что-то тут еще будет точно
+6. Changelog Битрикса (обновления) [ссылка](https://dev.1c-bitrix.ru/docs/versions.php)
