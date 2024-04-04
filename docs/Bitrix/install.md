@@ -22,6 +22,5 @@ Owner: Misha Kovalev
 
 ### Официальное видео битрикс по установке (просмотреть после прочтения инструкции в шагах выше)
 
-[https://youtu.be/WpkL0RE4enc?si=OI3_l5tcO129SFEz](https://youtu.be/WpkL0RE4enc?si=OI3_l5tcO129SFEz)
+[Открыть видео!](https://youtu.be/WpkL0RE4enc?si=OI3_l5tcO129SFEz)
 
-[https://downloader.disk.yandex.ru/preview/5b2efccda9fdc40ef64c371d4d54ffd7c7a7cea42d4bfca56c9dded6d59ec0ca/660ef9d8/GYT00Qd9Nzx8vhtNcZIDf9KLyh7yFGGKHyIGsbiwpy4iXbMVUpAb_rhpgPu4WhiuX6PrBvCasBMaV7vVq8xVnw%3D%3D?uid=0&filename=2024-04-04_18-04-21.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048](https://downloader.disk.yandex.ru/preview/5b2efccda9fdc40ef64c371d4d54ffd7c7a7cea42d4bfca56c9dded6d59ec0ca/660ef9d8/GYT00Qd9Nzx8vhtNcZIDf9KLyh7yFGGKHyIGsbiwpy4iXbMVUpAb_rhpgPu4WhiuX6PrBvCasBMaV7vVq8xVnw%3D%3D?uid=0&filename=2024-04-04_18-04-21.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048)
