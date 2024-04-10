@@ -24,3 +24,12 @@ Owner: Misha Kovalev
 
 [Открыть видео!](https://youtu.be/WpkL0RE4enc?si=OI3_l5tcO129SFEz)
 
+## **Установка Bitrix через Docker: **
+
+Проблему с тем, что бы развернуть Битрикс в докере уже решили за нас. Тут просто будет гайд по тому, как воспользоваться данным решением. 
+
+Надеюсь дойдут руки, что бы сделать все значительно независимее
+
+GIT: [Bitrix in Docker](https://gitlab.com/bitrix-docker/server)
+
+TG-чат по данному гиту и DevOps: [https://t.me/bitrixdevops](https://t.me/bitrixdevops)

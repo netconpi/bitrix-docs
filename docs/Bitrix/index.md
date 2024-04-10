@@ -8,3 +8,4 @@
 4. План выполнения страницы [(ссылка)](https://dev.1c-bitrix.ru/api_help/main/general/pageplan.php)
 5. Страница с экзаменами Битрикс (+ курсы там же) [(ссылка)](https://academy.1c-bitrix.ru/certification/exams.php)
 6. Changelog Битрикса (обновления) [ссылка](https://dev.1c-bitrix.ru/docs/versions.php)
+7. Золотые правила по работе с битрикс [ссылка](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=2815)
